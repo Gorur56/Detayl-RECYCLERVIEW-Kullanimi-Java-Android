@@ -52,5 +52,7 @@ public class MainActivity extends AppCompatActivity {
         filmlerArrayList.add(f5);
         filmlerArrayList.add(f6);
 
+        adapter = new FilmAdapter(MainActivity.this, filmlerArrayList);
+        rv.setAdapter(adapter);
     }
 }

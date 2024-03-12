@@ -52,7 +52,7 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.CardViewTasari
     public void onBindViewHolder(@NonNull CardViewTasarimNesneleriniTutucu holder, int position) {
         final Filmler film = filmlerList.get(position);
 
-        holder.textViewFilmBaslik.setText(film.getFilm_id());
+        holder.textViewFilmBaslik.setText(film.getFilm_ad());
         holder.textViewFilmFiyat.setText(film.getFilm_fiyat()+" TL");
 
         holder.imageFilmResim.setImageResource(R.drawable.interstellar);
