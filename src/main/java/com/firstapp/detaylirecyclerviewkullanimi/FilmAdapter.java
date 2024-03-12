@@ -55,7 +55,10 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.CardViewTasari
         holder.textViewFilmBaslik.setText(film.getFilm_ad());
         holder.textViewFilmFiyat.setText(film.getFilm_fiyat()+" TL");
 
-        holder.imageFilmResim.setImageResource(R.drawable.interstellar);
+        //holder.imageFilmResim.setImageResource(R.drawable.interstellar); dinamik yapmalıyız.
+
+        holder.imageFilmResim.setImageResource(mContext.getResources()
+                .getIdentifier(film.getFilm_resim_ad(), "drawable", mContext.getPackageName()));
 
 
         holder.buttonSepeteEkle.setOnClickListener(new View.OnClickListener() {
